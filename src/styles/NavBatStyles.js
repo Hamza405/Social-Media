@@ -1,0 +1,19 @@
+import { styled, Toolbar, Box, Container } from "@mui/material";
+
+export const ToolBarStyle = styled(Toolbar)({
+  display: "flex",
+  justifyContent: "space-between",
+});
+
+export const SearchBoxStyle = styled(Box)(({ theme }) => ({
+  backgroundColor: "white",
+  padding: "0px 10px",
+  borderRadius: theme.shape.borderRadius,
+  width: "40%",
+}));
+
+export const ActionsStyle = styled(Box)(({ theme }) => ({
+  display: "flex",
+  gap: "20px",
+  alignItems: "center",
+}));
