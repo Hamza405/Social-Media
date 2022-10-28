@@ -20,21 +20,21 @@ const Feeds = () => {
     <Box flex={4} p={2}>
       <PostCard
         title="Make your self"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHz5nVTIFDf0X5qqmpjI4q6GSu5lmc9ryUKBlaAjdDw&s"
+        image="https://images.pexels.com/photos/735987/pexels-photo-735987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         des="This impressive paella is a perfect party dish and a fun meal to cook
           together with your guests. Add 1 cup of frozen peas along with the
           mussels, if you like."
       />
       <PostCard
         title="Make your self"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHz5nVTIFDf0X5qqmpjI4q6GSu5lmc9ryUKBlaAjdDw&s"
+        image="https://images.pexels.com/photos/735987/pexels-photo-735987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         des="This impressive paella is a perfect party dish and a fun meal to cook
           together with your guests. Add 1 cup of frozen peas along with the
           mussels, if you like."
       />
       <PostCard
         title="Make your self"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHz5nVTIFDf0X5qqmpjI4q6GSu5lmc9ryUKBlaAjdDw&s"
+        image="https://images.pexels.com/photos/735987/pexels-photo-735987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         des="This impressive paella is a perfect party dish and a fun meal to cook
           together with your guests. Add 1 cup of frozen peas along with the
           mussels, if you like."
