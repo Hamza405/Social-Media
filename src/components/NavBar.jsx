@@ -4,6 +4,7 @@ import {
   SearchBoxStyle,
   ToolBarStyle,
   ActionsStyle,
+  MobileActionsStyle,
 } from "../styles/NavBatStyles";
 import { Android, Mail, Notifications } from "@mui/icons-material";
 
@@ -30,6 +31,13 @@ const NavBar = () => {
             src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png"
           />
         </ActionsStyle>
+        <MobileActionsStyle>
+          <Avatar
+            sx={{ width: 30, height: 30 }}
+            src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png"
+          />
+          <Typography variant="h6">Hamza</Typography>
+        </MobileActionsStyle>
       </ToolBarStyle>
     </AppBar>
   );

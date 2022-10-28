@@ -16,4 +16,16 @@ export const ActionsStyle = styled(Box)(({ theme }) => ({
   display: "flex",
   gap: "20px",
   alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
+  },
+}));
+
+export const MobileActionsStyle = styled(Box)(({ theme }) => ({
+  display: "flex",
+  gap: "10px",
+  alignItems: "center",
+  [theme.breakpoints.up("sm")]: {
+    display: "none",
+  },
 }));
