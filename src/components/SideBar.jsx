@@ -17,7 +17,7 @@ import {
   AccountBox,
   ModeNight,
 } from "@mui/icons-material";
-import MenuListItem from "./MenuListItem";
+import MenuListItem from "./Widgets/MenuListItem";
 const SideBar = () => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
