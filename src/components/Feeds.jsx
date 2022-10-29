@@ -14,10 +14,11 @@ import {
 import PostCard from "./Widgets/PostCard";
 
 import { Favorite, FavoriteBorder, Share, MoreVert } from "@mui/icons-material";
+import { FeedsContainer } from "../styles/ContainersStyles";
 
 const Feeds = () => {
   return (
-    <Box flex={4} p={2}>
+    <FeedsContainer>
       <PostCard
         title="Make your self"
         image="https://images.pexels.com/photos/735987/pexels-photo-735987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -39,7 +40,7 @@ const Feeds = () => {
           together with your guests. Add 1 cup of frozen peas along with the
           mussels, if you like."
       />
-    </Box>
+    </FeedsContainer>
   );
 };
 

@@ -18,9 +18,10 @@ import {
   ModeNight,
 } from "@mui/icons-material";
 import MenuListItem from "./Widgets/MenuListItem";
+import { SideBarContainer } from "../styles/ContainersStyles";
 const SideBar = () => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <SideBarContainer>
       <Box position="fixed">
         <List>
           <MenuListItem text="Home" link="#home" icon={<Home />} />
@@ -39,7 +40,7 @@ const SideBar = () => {
           </ListItem>
         </List>
       </Box>
-    </Box>
+    </SideBarContainer>
   );
 };
 
