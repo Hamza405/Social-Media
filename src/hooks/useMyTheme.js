@@ -1,15 +1,8 @@
 import { createTheme } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const useMyTheme = () => {
   const [mode, setMode] = useState("light");
-  // const toggleToLightMode = () => {
-  //   console.log("d");
-  //   setMode("light");
-  // };
-  // const toggleToDarkMode = () => {
-  //   setMode("dark");
-  // };
   const theme = createTheme({
     palette: {
       mode: mode,

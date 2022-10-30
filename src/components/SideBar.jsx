@@ -5,7 +5,6 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
-  ListItemText,
   Switch,
 } from "@mui/material";
 import {
@@ -20,7 +19,6 @@ import {
 import MenuListItem from "./Widgets/MenuListItem";
 import { SideBarContainer } from "../styles/ContainersStyles";
 const SideBar = ({ t }) => {
-  console.log(t);
   return (
     <SideBarContainer>
       <Box position="fixed">
