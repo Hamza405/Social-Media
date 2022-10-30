@@ -16,7 +16,7 @@ import { Favorite, FavoriteBorder, Share, MoreVert } from "@mui/icons-material";
 
 const PostCard = ({ title, image, des }) => {
   return (
-    <Card sx={{ margin: { mx: 2, sm: 3, md: 5 } }}>
+    <Card sx={{ margin: { xs: 2, sm: 3, md: 5 } }}>
       <CardHeader
         avatar={<Avatar aria-label="recipe">R</Avatar>}
         action={

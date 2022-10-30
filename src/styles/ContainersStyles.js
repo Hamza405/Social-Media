@@ -11,9 +11,8 @@ export const SideBarContainer = styled(Box)(({ theme }) => ({
 
 export const RightBarContainer = styled(Box)(({ theme }) => ({
   flex: 2,
-  padding: "10px",
-  marginRight: 2,
-  [theme.breakpoints.down("sm")]: {
+  padding: 1,
+  [theme.breakpoints.down("md")]: {
     display: "none",
   },
 }));

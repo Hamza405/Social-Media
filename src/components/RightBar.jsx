@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Box,
   Typography,
   AvatarGroup,
   Avatar,
@@ -13,6 +12,8 @@ import {
   ListItemText,
 } from "@mui/material";
 import { RightBarContainer } from "../styles/ContainersStyles";
+import { RightBarWrapper, RightBarListStyle } from "../styles/RightBarStyles";
+import RightBarTitle from "./Widgets/RightBarTitle";
 
 const itemData = [
   {
@@ -44,18 +45,9 @@ const itemData = [
 const RightBar = () => {
   return (
     <RightBarContainer>
-      <Box
-        position="fixed"
-        sx={{
-          height: "89%",
-          overflowY: "scroll",
-          overflowX: "hidden",
-        }}
-      >
-        <Typography variant="h6" fontWeight={100} mt={2}>
-          Online Friends
-        </Typography>
-        <AvatarGroup max={7} sx={{ mt: 3 }}>
+      <RightBarWrapper>
+        <RightBarTitle title="Online Friends" />
+        <AvatarGroup max={7} sx={{ mt: 3, justifyContent: "start" }}>
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
           <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
           <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
@@ -67,10 +59,8 @@ const RightBar = () => {
           <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
           <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
         </AvatarGroup>
-        <Typography variant="h6" fontWeight={100} mt={2}>
-          Latest Photos
-        </Typography>
-        <ImageList gap={3} cols={3} rowHeight={100} mt={2} mb={2}>
+        <RightBarTitle title="Latest Photos" />
+        <ImageList gap={5} cols={2} mt={2} mb={2}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -82,10 +72,8 @@ const RightBar = () => {
             </ImageListItem>
           ))}
         </ImageList>
-        <Typography variant="h6" fontWeight={100} mt={2}>
-          Latest Conversations
-        </Typography>
-        <List
+        <RightBarTitle title="Latest Conversations" />
+        <RightBarListStyle
           sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
         >
           <ListItem alignItems="flex-start">
@@ -153,8 +141,8 @@ const RightBar = () => {
               }
             />
           </ListItem>
-        </List>
-      </Box>
+        </RightBarListStyle>
+      </RightBarWrapper>
     </RightBarContainer>
   );
 };
