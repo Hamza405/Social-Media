@@ -1,6 +1,19 @@
 import { useRef, useState } from "react";
-import { Tooltip, Fab, Avatar, Typography, TextField } from "@mui/material";
-import { Add } from "@mui/icons-material";
+import {
+  Tooltip,
+  Fab,
+  Avatar,
+  Typography,
+  TextField,
+  Stack,
+} from "@mui/material";
+import {
+  Add,
+  EmojiEmotions,
+  Image,
+  PersonAdd,
+  VideoCameraBack,
+} from "@mui/icons-material";
 import { BoxModal, ModalWrapper, UserBox } from "../styles/ModalStyle";
 
 const AddPostButton = () => {
@@ -50,6 +63,12 @@ const AddPostButton = () => {
             rows={3}
             placeholder="What's on your mind ?"
           />
+          <Stack direction="row" gap={2} mt={3} mb={3}>
+            <EmojiEmotions color="primary" />
+            <Image color="secondary" />
+            <VideoCameraBack color="success" />
+            <PersonAdd color="error" />
+          </Stack>
         </BoxModal>
       </ModalWrapper>
     </>
