@@ -6,13 +6,16 @@ export const ModalWrapper = styled(Modal)({
   alignItems: "center",
 });
 
-export const BoxModal = styled(Box)({
+export const BoxModal = styled(Box)(({ theme }) => ({
   width: "400px",
   height: "280px",
   backgroundColor: "white",
   padding: 16,
   borderRadius: 10,
-});
+  [theme.breakpoints.down("sm")]: {
+    width: "85%",
+  },
+}));
 export const UserBox = styled(Box)({
   margin: "16px 0",
   display: "flex",

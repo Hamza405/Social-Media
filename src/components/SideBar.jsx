@@ -19,7 +19,8 @@ import {
 } from "@mui/icons-material";
 import MenuListItem from "./Widgets/MenuListItem";
 import { SideBarContainer } from "../styles/ContainersStyles";
-const SideBar = () => {
+const SideBar = ({ t }) => {
+  console.log(t);
   return (
     <SideBarContainer>
       <Box position="fixed">
@@ -35,7 +36,11 @@ const SideBar = () => {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch />
+              <Switch
+                onChange={(e) =>
+                  t.setMode((p) => (p === "light" ? "dark" : "light"))
+                }
+              />
             </ListItemButton>
           </ListItem>
         </List>
