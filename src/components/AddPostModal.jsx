@@ -1,7 +1,5 @@
 import { useRef, useState } from "react";
 import {
-  Tooltip,
-  Fab,
   Avatar,
   Typography,
   TextField,
@@ -10,7 +8,6 @@ import {
   Button,
 } from "@mui/material";
 import {
-  Add,
   DateRange,
   EmojiEmotions,
   Image,
@@ -18,26 +15,16 @@ import {
   VideoCameraBack,
 } from "@mui/icons-material";
 import { BoxModal, ModalWrapper, UserBox } from "../styles/ModalStyle";
+import FloatButton from "./Widgets/FloatButton";
 
-const AddPostButton = () => {
+const AddPostModal = () => {
   const inputRef = useRef();
   const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
+
   return (
     <>
-      <Tooltip
-        onClick={() => setOpen(true)}
-        title="Add Post"
-        sx={{
-          position: "fixed",
-          bottom: 20,
-          left: { xs: "calc(50% - 25px)", sm: 30 },
-        }}
-      >
-        <Fab color="primary" aria-label="add">
-          <Add />
-        </Fab>
-      </Tooltip>
+      <FloatButton setOpen={setOpen} />
       <ModalWrapper
         open={open}
         onClose={handleClose}
@@ -88,4 +75,4 @@ const AddPostButton = () => {
   );
 };
 
-export default AddPostButton;
+export default AddPostModal;
