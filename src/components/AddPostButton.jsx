@@ -6,9 +6,12 @@ import {
   Typography,
   TextField,
   Stack,
+  ButtonGroup,
+  Button,
 } from "@mui/material";
 import {
   Add,
+  DateRange,
   EmojiEmotions,
   Image,
   PersonAdd,
@@ -69,6 +72,16 @@ const AddPostButton = () => {
             <VideoCameraBack color="success" />
             <PersonAdd color="error" />
           </Stack>
+          <ButtonGroup
+            fullWidth
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button>POST</Button>
+            <Button sx={{ width: "130px" }}>
+              <DateRange />
+            </Button>
+          </ButtonGroup>
         </BoxModal>
       </ModalWrapper>
     </>
