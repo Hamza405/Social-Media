@@ -14,10 +14,11 @@ import {
   ActionsStyle,
   MobileActionsStyle,
 } from "../styles/NavBatStyles";
-import { Android, Mail, Notifications } from "@mui/icons-material";
+import { Mail, Notifications } from "@mui/icons-material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ setDrawer }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const openMenuHandler = () => setOpenMenu(true);
   return (
@@ -26,7 +27,10 @@ const NavBar = () => {
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           Social
         </Typography>
-        <Android sx={{ display: { xs: "block", sm: "none" } }} />
+        <MenuIcon
+          onClick={() => setDrawer(true)}
+          sx={{ display: { xs: "block", sm: "none" } }}
+        />
         <SearchBoxStyle>
           <InputBase placeholder="Search..." />
         </SearchBoxStyle>

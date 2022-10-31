@@ -19,6 +19,7 @@ const useMyTheme = () => {
   });
   return {
     theme,
+    mode,
     setMode,
   };
 };

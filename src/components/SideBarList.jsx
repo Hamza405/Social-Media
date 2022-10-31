@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Box,
   List,
   ListItem,
   ListItemButton,
@@ -33,6 +32,7 @@ const SideBarList = ({ theme }) => {
             <ModeNight />
           </ListItemIcon>
           <Switch
+            checked={theme.mode === "dark" ? true : false}
             onChange={(e) =>
               theme.setMode((p) => (p === "light" ? "dark" : "light"))
             }

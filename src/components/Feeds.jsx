@@ -1,19 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Card,
-  CardHeader,
-  Avatar,
-  IconButton,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Checkbox,
-} from "@mui/material";
 import PostCard from "./Widgets/PostCard";
-
-import { Favorite, FavoriteBorder, Share, MoreVert } from "@mui/icons-material";
 import { FeedsContainer } from "../styles/ContainersStyles";
 
 const Feeds = () => {
