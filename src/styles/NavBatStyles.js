@@ -6,7 +6,6 @@ export const ToolBarStyle = styled(Toolbar)({
 });
 
 export const SearchBoxStyle = styled(Box)(({ theme }) => ({
-  backgroundColor: "white",
   padding: "0px 10px",
   borderRadius: theme.shape.borderRadius,
   width: "40%",

@@ -22,7 +22,7 @@ const NavBar = ({ setDrawer }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const openMenuHandler = () => setOpenMenu(true);
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{ background: "primary" }}>
       <ToolBarStyle>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           Social
@@ -31,7 +31,7 @@ const NavBar = ({ setDrawer }) => {
           onClick={() => setDrawer(true)}
           sx={{ display: { xs: "block", sm: "none" } }}
         />
-        <SearchBoxStyle>
+        <SearchBoxStyle bgcolor={"background.default"} color={"text.primary"}>
           <InputBase placeholder="Search..." />
         </SearchBoxStyle>
         <ActionsStyle>

@@ -9,7 +9,6 @@ export const ModalWrapper = styled(Modal)({
 export const BoxModal = styled(Box)(({ theme }) => ({
   width: "400px",
   height: "280px",
-  backgroundColor: "white",
   padding: 16,
   borderRadius: 10,
   [theme.breakpoints.down("sm")]: {

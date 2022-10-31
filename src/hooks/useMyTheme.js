@@ -7,7 +7,7 @@ const useMyTheme = () => {
     palette: {
       mode: mode,
       primary: {
-        main: "#17605a",
+        main: mode === "light" ? "#17605a" : "#22a190",
       },
       secondary: {
         main: "#15c630",
