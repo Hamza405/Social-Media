@@ -5,7 +5,6 @@ import {
   Avatar,
   ImageList,
   ImageListItem,
-  List,
   ListItem,
   ListItemAvatar,
   Divider,

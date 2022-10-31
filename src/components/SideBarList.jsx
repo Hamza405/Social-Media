@@ -18,7 +18,6 @@ import {
 import MenuListItem from "./Widgets/MenuListItem";
 
 const SideBarList = ({ theme }) => {
-  console.log(theme.theme.palette);
   return (
     <List>
       <MenuListItem text="Home" link="#home" icon={<Home />} />
