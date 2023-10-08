@@ -6,6 +6,16 @@ import "./feed.css";
 import { Posts } from "../../dummyData";
 
 export default function Feed() {
+  const { response, error, loading } = useHttpRequest({
+    url: "posts/timeline/650f68e45ffc039cab3e135b",
+  });
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    if (response) {
+      setPosts(response.data.posts);
+    }
+  }, [response]);
   return (
     <div className="feed">
       <div className="feedWrapper">

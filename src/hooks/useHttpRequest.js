@@ -6,7 +6,7 @@ const useHttpRequest = ( { url, payload, method } ) => {
     const [error, setError] = useState();
     const [response, setResponse] = useState();
 
-    const request = async () => {
+    const request = async ( { url, payload } ) => {
         try {
             setLoading( true );
             switch ( method ) {
@@ -45,9 +45,9 @@ const useHttpRequest = ( { url, payload, method } ) => {
     }
 
     useEffect( () => {
-        request()
+        request( { url, payload } )
         return () => setLoading( false );
-    }, [] )
+    }, [url, payload] )
 
     return {
         response, loading, error

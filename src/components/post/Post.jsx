@@ -1,4 +1,5 @@
 import "./post.css";
+import {format} from "timeago.js";
 import { MoreVert } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 import { useEffect, useState } from "react";
@@ -36,7 +37,7 @@ export default function Post({ post }) {
                 alt=""
               />
               <span className="postUsername">{user.username}</span>
-              <span className="postDate">{post.date}</span>
+              <span className="postDate">{format(post.createdAt)}</span>
             </div>
             <div className="postTopRight">
               <MoreVert />
